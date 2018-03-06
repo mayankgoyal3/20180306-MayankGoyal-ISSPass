@@ -8,15 +8,39 @@
 
 import UIKit
 
+var appDelegate: AppDelegate {
+    return UIApplication.shared.delegate as! AppDelegate
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
         return true
+    }
+    
+    func showAlertForUpdateLocation() {
+        let alert = UIAlertController(title: "Location Access Denied".localize(), message: "GPS access is restricted. In order to use tracking, please enable GPS in the Settigs app under Privacy, Location Services.".localize(), preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Go To Setting", style: UIAlertActionStyle.default, handler: { (alert: UIAlertAction!) in
+            UIApplication.shared.openURL(NSURL(string:UIApplicationOpenSettingsURLString)! as URL)
+        }))
+        if let controller = self.window?.rootViewController {
+            controller.present(alert, animated: true, completion: nil)
+        }
+    }
+
+    
+    func simpleAlertWithTitleAndMessage(_ titleMessage: (String, String)) {
+        let alert = UIAlertController(title: titleMessage.0, message: titleMessage.1, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (alert: UIAlertAction!) in
+        }))
+        if let controller = self.window?.rootViewController {
+            controller.present(alert, animated: true, completion: nil)
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

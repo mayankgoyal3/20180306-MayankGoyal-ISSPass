@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6D23096C204EE0EC00A7322D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D23096B204EE0EC00A7322D /* AppDelegate.swift */; };
-		6D23096E204EE0ED00A7322D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D23096D204EE0ED00A7322D /* ViewController.swift */; };
+		2A798C3206B3CC21DFC7242F /* Pods_ISSPassTimes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6650B7C16E122D5A212601BD /* Pods_ISSPassTimes.framework */; };
+		699A53799105D25AB1C997E0 /* Pods_ISSPassTimesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55FBC76DBE9DAFDF07FA13D /* Pods_ISSPassTimesUITests.framework */; };
 		6D230971204EE0ED00A7322D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D23096F204EE0ED00A7322D /* Main.storyboard */; };
 		6D230973204EE0ED00A7322D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D230972204EE0ED00A7322D /* Assets.xcassets */; };
 		6D230976204EE0ED00A7322D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D230974204EE0ED00A7322D /* LaunchScreen.storyboard */; };
 		6D230981204EE0ED00A7322D /* ISSPassTimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D230980204EE0ED00A7322D /* ISSPassTimesTests.swift */; };
 		6D23098C204EE0ED00A7322D /* ISSPassTimesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D23098B204EE0ED00A7322D /* ISSPassTimesUITests.swift */; };
+		6D2309AA204EF24300A7322D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2309A8204EF24300A7322D /* AppDelegate.swift */; };
+		6D2309B0204EF3F400A7322D /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2309AF204EF3F400A7322D /* ErrorHandler.swift */; };
+		6D2309B3204EF44300A7322D /* String+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2309B2204EF44300A7322D /* String+Utility.swift */; };
+		6D2309B5204EF4E600A7322D /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2309B4204EF4E600A7322D /* APIManager.swift */; };
+		6D2309B7204EF5C900A7322D /* PassTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2309B6204EF5C900A7322D /* PassTimeViewController.swift */; };
+		6D2309BB204EF6D100A7322D /* WebLayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2309BA204EF6D100A7322D /* WebLayerManager.swift */; };
+		6D2309BF204EF86100A7322D /* PassTimeViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2309BE204EF86100A7322D /* PassTimeViewController+DataSource.swift */; };
+		9300A7FC0169960D0EC45BAD /* Pods_ISSPassTimesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928E11E47777DC5AB10113C5 /* Pods_ISSPassTimesTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0711F90419167BE7A65FC81C /* Pods-ISSPassTimes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISSPassTimes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ISSPassTimes/Pods-ISSPassTimes.debug.xcconfig"; sourceTree = "<group>"; };
+		2637F2FD58FC412D116F1820 /* Pods-ISSPassTimesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISSPassTimesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ISSPassTimesTests/Pods-ISSPassTimesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3745E512FD73AE23B13E2097 /* Pods-ISSPassTimesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISSPassTimesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ISSPassTimesUITests/Pods-ISSPassTimesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6650B7C16E122D5A212601BD /* Pods_ISSPassTimes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ISSPassTimes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D230968204EE0EC00A7322D /* ISSPassTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISSPassTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D23096B204EE0EC00A7322D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6D23096D204EE0ED00A7322D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6D230970204EE0ED00A7322D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6D230972204EE0ED00A7322D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D230975204EE0ED00A7322D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +57,18 @@
 		6D230987204EE0ED00A7322D /* ISSPassTimesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ISSPassTimesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D23098B204EE0ED00A7322D /* ISSPassTimesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSPassTimesUITests.swift; sourceTree = "<group>"; };
 		6D23098D204EE0ED00A7322D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D2309A8204EF24300A7322D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6D2309AF204EF3F400A7322D /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		6D2309B2204EF44300A7322D /* String+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utility.swift"; sourceTree = "<group>"; };
+		6D2309B4204EF4E600A7322D /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		6D2309B6204EF5C900A7322D /* PassTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassTimeViewController.swift; sourceTree = "<group>"; };
+		6D2309BA204EF6D100A7322D /* WebLayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebLayerManager.swift; sourceTree = "<group>"; };
+		6D2309BE204EF86100A7322D /* PassTimeViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PassTimeViewController+DataSource.swift"; sourceTree = "<group>"; };
+		7C8B30FF506542A47EDF70A1 /* Pods-ISSPassTimesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISSPassTimesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ISSPassTimesUITests/Pods-ISSPassTimesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		928E11E47777DC5AB10113C5 /* Pods_ISSPassTimesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ISSPassTimesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9624999637F2B871FD8B0FAC /* Pods-ISSPassTimes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISSPassTimes.release.xcconfig"; path = "Pods/Target Support Files/Pods-ISSPassTimes/Pods-ISSPassTimes.release.xcconfig"; sourceTree = "<group>"; };
+		A55FBC76DBE9DAFDF07FA13D /* Pods_ISSPassTimesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ISSPassTimesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD8EF5662EA60D0D87C74B06 /* Pods-ISSPassTimesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISSPassTimesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ISSPassTimesTests/Pods-ISSPassTimesTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A798C3206B3CC21DFC7242F /* Pods_ISSPassTimes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9300A7FC0169960D0EC45BAD /* Pods_ISSPassTimesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				699A53799105D25AB1C997E0 /* Pods_ISSPassTimesUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +106,8 @@
 				6D23097F204EE0ED00A7322D /* ISSPassTimesTests */,
 				6D23098A204EE0ED00A7322D /* ISSPassTimesUITests */,
 				6D230969204EE0EC00A7322D /* Products */,
+				ECD7A346E1AE614D6BB46CA3 /* Pods */,
+				A2BC2A03F3BE269CB872E50E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,11 +124,12 @@
 		6D23096A204EE0EC00A7322D /* ISSPassTimes */ = {
 			isa = PBXGroup;
 			children = (
-				6D23096B204EE0EC00A7322D /* AppDelegate.swift */,
-				6D23096D204EE0ED00A7322D /* ViewController.swift */,
-				6D23096F204EE0ED00A7322D /* Main.storyboard */,
+				6D2309B1204EF43200A7322D /* Common */,
+				6D2309AC204EF28B00A7322D /* WebAccessLayer */,
+				6D2309A7204EF24300A7322D /* AppDelegate */,
+				6D2309A5204EF24300A7322D /* PresentationLayer */,
+				6D2309A4204EF24300A7322D /* Storyboard */,
 				6D230972204EE0ED00A7322D /* Assets.xcassets */,
-				6D230974204EE0ED00A7322D /* LaunchScreen.storyboard */,
 				6D230977204EE0ED00A7322D /* Info.plist */,
 			);
 			path = ISSPassTimes;
@@ -125,6 +153,73 @@
 			path = ISSPassTimesUITests;
 			sourceTree = "<group>";
 		};
+		6D2309A4204EF24300A7322D /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				6D23096F204EE0ED00A7322D /* Main.storyboard */,
+				6D230974204EE0ED00A7322D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		6D2309A5204EF24300A7322D /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				6D2309B6204EF5C900A7322D /* PassTimeViewController.swift */,
+				6D2309BE204EF86100A7322D /* PassTimeViewController+DataSource.swift */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		6D2309A7204EF24300A7322D /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				6D2309A8204EF24300A7322D /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		6D2309AC204EF28B00A7322D /* WebAccessLayer */ = {
+			isa = PBXGroup;
+			children = (
+				6D2309BA204EF6D100A7322D /* WebLayerManager.swift */,
+				6D2309AF204EF3F400A7322D /* ErrorHandler.swift */,
+				6D2309B4204EF4E600A7322D /* APIManager.swift */,
+			);
+			path = WebAccessLayer;
+			sourceTree = "<group>";
+		};
+		6D2309B1204EF43200A7322D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6D2309B2204EF44300A7322D /* String+Utility.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A2BC2A03F3BE269CB872E50E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6650B7C16E122D5A212601BD /* Pods_ISSPassTimes.framework */,
+				928E11E47777DC5AB10113C5 /* Pods_ISSPassTimesTests.framework */,
+				A55FBC76DBE9DAFDF07FA13D /* Pods_ISSPassTimesUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECD7A346E1AE614D6BB46CA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0711F90419167BE7A65FC81C /* Pods-ISSPassTimes.debug.xcconfig */,
+				9624999637F2B871FD8B0FAC /* Pods-ISSPassTimes.release.xcconfig */,
+				2637F2FD58FC412D116F1820 /* Pods-ISSPassTimesTests.debug.xcconfig */,
+				BD8EF5662EA60D0D87C74B06 /* Pods-ISSPassTimesTests.release.xcconfig */,
+				3745E512FD73AE23B13E2097 /* Pods-ISSPassTimesUITests.debug.xcconfig */,
+				7C8B30FF506542A47EDF70A1 /* Pods-ISSPassTimesUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D230990204EE0ED00A7322D /* Build configuration list for PBXNativeTarget "ISSPassTimes" */;
 			buildPhases = (
+				7AD4ED9A82C8771A34726A45 /* [CP] Check Pods Manifest.lock */,
 				6D230964204EE0EC00A7322D /* Sources */,
 				6D230965204EE0EC00A7322D /* Frameworks */,
 				6D230966204EE0EC00A7322D /* Resources */,
+				507D043361E514AA0F058B76 /* [CP] Embed Pods Frameworks */,
+				67D231D225A3FED5F620A401 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +247,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D230993204EE0ED00A7322D /* Build configuration list for PBXNativeTarget "ISSPassTimesTests" */;
 			buildPhases = (
+				502DDF97FF68CFF6C0AC81D5 /* [CP] Check Pods Manifest.lock */,
 				6D230978204EE0ED00A7322D /* Sources */,
 				6D230979204EE0ED00A7322D /* Frameworks */,
 				6D23097A204EE0ED00A7322D /* Resources */,
+				2194B01265ED0490A18515CC /* [CP] Embed Pods Frameworks */,
+				A4140DB9A28C7340530AF707 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +268,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D230996204EE0ED00A7322D /* Build configuration list for PBXNativeTarget "ISSPassTimesUITests" */;
 			buildPhases = (
+				A2270E2297BF580BB597D368 /* [CP] Check Pods Manifest.lock */,
 				6D230983204EE0ED00A7322D /* Sources */,
 				6D230984204EE0ED00A7322D /* Frameworks */,
 				6D230985204EE0ED00A7322D /* Resources */,
+				6D456766E6D662D4F09834DC /* [CP] Embed Pods Frameworks */,
+				EA2F9E05F89270E619DE9041 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,6 +298,11 @@
 					6D230967204EE0EC00A7322D = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					6D23097B204EE0ED00A7322D = {
 						CreatedOnToolsVersion = 9.2;
@@ -254,13 +363,168 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2194B01265ED0490A18515CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ISSPassTimesTests/Pods-ISSPassTimesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		502DDF97FF68CFF6C0AC81D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ISSPassTimesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		507D043361E514AA0F058B76 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ISSPassTimes/Pods-ISSPassTimes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/ReachabilitySwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReachabilitySwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ISSPassTimes/Pods-ISSPassTimes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67D231D225A3FED5F620A401 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ISSPassTimes/Pods-ISSPassTimes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D456766E6D662D4F09834DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ISSPassTimesUITests/Pods-ISSPassTimesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AD4ED9A82C8771A34726A45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ISSPassTimes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2270E2297BF580BB597D368 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ISSPassTimesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4140DB9A28C7340530AF707 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ISSPassTimesTests/Pods-ISSPassTimesTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA2F9E05F89270E619DE9041 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ISSPassTimesUITests/Pods-ISSPassTimesUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6D230964204EE0EC00A7322D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D23096E204EE0ED00A7322D /* ViewController.swift in Sources */,
-				6D23096C204EE0EC00A7322D /* AppDelegate.swift in Sources */,
+				6D2309B7204EF5C900A7322D /* PassTimeViewController.swift in Sources */,
+				6D2309B5204EF4E600A7322D /* APIManager.swift in Sources */,
+				6D2309B3204EF44300A7322D /* String+Utility.swift in Sources */,
+				6D2309B0204EF3F400A7322D /* ErrorHandler.swift in Sources */,
+				6D2309BF204EF86100A7322D /* PassTimeViewController+DataSource.swift in Sources */,
+				6D2309AA204EF24300A7322D /* AppDelegate.swift in Sources */,
+				6D2309BB204EF6D100A7322D /* WebLayerManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +627,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -414,7 +678,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -424,13 +688,14 @@
 		};
 		6D230991204EE0ED00A7322D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0711F90419167BE7A65FC81C /* Pods-ISSPassTimes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PP64RT7P8Z;
 				INFOPLIST_FILE = ISSPassTimes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.ISSPassTimes.ISSPassTimes;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.isspasstime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -439,13 +704,14 @@
 		};
 		6D230992204EE0ED00A7322D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9624999637F2B871FD8B0FAC /* Pods-ISSPassTimes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PP64RT7P8Z;
 				INFOPLIST_FILE = ISSPassTimes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.ISSPassTimes.ISSPassTimes;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.isspasstime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -454,6 +720,7 @@
 		};
 		6D230994204EE0ED00A7322D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2637F2FD58FC412D116F1820 /* Pods-ISSPassTimesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +738,7 @@
 		};
 		6D230995204EE0ED00A7322D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD8EF5662EA60D0D87C74B06 /* Pods-ISSPassTimesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +756,7 @@
 		};
 		6D230997204EE0ED00A7322D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3745E512FD73AE23B13E2097 /* Pods-ISSPassTimesUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +773,7 @@
 		};
 		6D230998204EE0ED00A7322D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C8B30FF506542A47EDF70A1 /* Pods-ISSPassTimesUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
