@@ -47,34 +47,36 @@ class PassTimeViewController: UIViewController, CLLocationManagerDelegate {
             if self.currentLocation != location {
                 self.currentLocation = location
                 // Call the service
-                self.getIssPaaTime()
+                self.getIssPaaTime {
+                    self.tableView.reloadData()
+                }
             }
         }
         self.locationManager.stopUpdatingLocation()
     }
     
     //MARK:- Method for Service Calling
-    func getIssPaaTime() {
+    func getIssPaaTime(completionHandler: @escaping () -> Void) {
         if let latitude = self.currentLocation?.coordinate.latitude, let longitude = self.currentLocation?.coordinate.longitude {
             let strUrl = String(format: issPassTime, latitude , longitude)
             WebLayerManager.sharedInstance.executeService(urlPath: strUrl, httpMethodType: "GET", body: nil) { (result, error) in
-                if let error = error { // Show alert for error
-                    DispatchQueue.main.async {
+                DispatchQueue.main.async {
+                    if let error = error { // Show alert for error
                         appDelegate.simpleAlertWithTitleAndMessage(messageFromError(error))
+                        completionHandler()
                     }
-                } else {
-                    DispatchQueue.main.async {
-                        if let result = result as? [String: Any] { // fetch the result
-                            if let responseArr = result["response"] as? NSMutableArray {
-                                self.passTimeData = responseArr
-                            }
+                    
+                    if let result = result as? [String: Any] { // fetch the result
+                        if let responseArr = result["response"] as? NSMutableArray {
+                            self.passTimeData = responseArr
                         }
-                        self.tableView.reloadData()
                     }
+                    completionHandler()
                 }
             }
         } else { // Alert for when coordinate is not available
             appDelegate.simpleAlertWithTitleAndMessage(("Location Access Denied", "Latitude and Longitude not available. Please enable GPS in the Settigs app under Privacy, Location Services."))
+            completionHandler()
         }
     }
 
