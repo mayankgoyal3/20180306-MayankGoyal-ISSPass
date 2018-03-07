@@ -8,4 +8,5 @@
 
 import UIKit
 
+// Define the URL's
 let issPassTime = "http://api.open-notify.org/iss-pass.json?lat=%f&lon=%f"

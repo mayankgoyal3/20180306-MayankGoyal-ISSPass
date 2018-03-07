@@ -10,6 +10,7 @@ import UIKit
 
 extension PassTimeViewController: UITableViewDelegate, UITableViewDataSource {
     
+    //MARK:- table view delegate and datasource functions
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -31,11 +32,12 @@ extension PassTimeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        // Show the placeholder text if data is not available
         if passTimeData.count > 0 {
             return ""
         }
         
-        return "No International Space Station Pass Times"
+        return "No International Space Station Pass Times".localize()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -56,6 +58,7 @@ extension PassTimeViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    // Change the timestamp in date format
     func getTheDateFromTime(timestamp: Double) -> String {
         let dateformat = DateFormatter()
         dateformat.dateFormat = "dd MMM, yyyy hh:mm aa"

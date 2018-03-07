@@ -22,9 +22,17 @@ class WebLayerManager: NSObject {
         return URLSession(configuration: config)
     }()
     
-    // Function used for execute service and return completion handle with Dictionary and Error
+    /**
+     Function used for execute service and return completion handle with Dictionary and Error
+    
+     - parameter urlPath, httpMethodType, body
+     - parameter completion: (completion: NSDictionary, NSError) -> Void
+     */
     func executeService(urlPath: String, httpMethodType: String, body: String?, completionHandler: @escaping (NSDictionary?, NSError?) -> Void) {
+        // Check the Internet connection
         if let reach = reachability?.isReachable, reach {
+            
+            // Remove the cache
             URLCache.shared.removeAllCachedResponses()
             let storage = HTTPCookieStorage.shared
             if let cookies = storage.cookies {
@@ -33,6 +41,7 @@ class WebLayerManager: NSObject {
                 }
             }
             
+            // Set the URL
             if let url = NSURL(string: urlPath) {
                 let request = NSMutableURLRequest(url: url as URL)
                 request.httpMethod = httpMethodType
@@ -49,6 +58,7 @@ class WebLayerManager: NSObject {
                                 var statuscode :NSInteger?
                                 if let httpResponse = response as? HTTPURLResponse {
                                     statuscode = httpResponse.statusCode
+                                    // CHeck the status code
                                     if statuscode == 200 {
                                         completionHandler(jsonResult, nil)
                                     } else {

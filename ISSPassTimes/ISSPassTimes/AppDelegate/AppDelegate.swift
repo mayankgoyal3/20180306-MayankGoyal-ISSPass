@@ -23,6 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
+    /**
+     Alert for location access Denied
+    */
     func showAlertForUpdateLocation() {
         let alert = UIAlertController(title: "Location Access Denied".localize(), message: "GPS access is restricted. In order to use tracking, please enable GPS in the Settigs app under Privacy, Location Services.".localize(), preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Go To Setting", style: UIAlertActionStyle.default, handler: { (alert: UIAlertAction!) in
@@ -33,7 +36,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
-    
+    /**
+     function for show alert
+     
+     parameter: tuple(STring, String)
+     */
     func simpleAlertWithTitleAndMessage(_ titleMessage: (String, String)) {
         let alert = UIAlertController(title: titleMessage.0, message: titleMessage.1, preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (alert: UIAlertAction!) in
